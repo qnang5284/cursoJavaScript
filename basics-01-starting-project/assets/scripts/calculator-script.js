@@ -8,7 +8,7 @@ let currentCalculation = DEFAULT_CALCULATION;
 
 
 function add() {
-    let inputVal = getInput();
+    const inputVal = getInput();
     currentCalculation = getSymbolToCurrentCalculation("+", inputVal);
     currentResult = currentResult + inputVal;
     outputResult(currentResult, currentCalculation);
@@ -17,7 +17,7 @@ function add() {
 addBtn.addEventListener('click', add);
 
 function substract() {
-    let inputVal = getInput();
+    const inputVal = getInput();
     currentCalculation = getSymbolToCurrentCalculation("-", inputVal);
     currentResult = currentResult - inputVal;
     outputResult(currentResult, currentCalculation);
@@ -26,7 +26,7 @@ function substract() {
 subtractBtn.addEventListener('click', substract);
 
 function multiply() {
-    let inputVal = getInput();
+    const inputVal = getInput();
     currentCalculation = getSymbolToCurrentCalculation("*", inputVal);
     currentResult = currentResult * inputVal;
     outputResult(currentResult, currentCalculation);
@@ -35,7 +35,7 @@ function multiply() {
 multiplyBtn.addEventListener('click', multiply);
 
 function divide() {
-    let inputVal = getInput();
+    const inputVal = getInput();
     currentCalculation = getSymbolToCurrentCalculation("/", inputVal);
     currentResult = currentResult / inputVal;
     outputResult(currentResult, currentCalculation);
