@@ -44,7 +44,8 @@ function divide() {
 divideBtn.addEventListener('click', divide);
 
 function getInput() {
-    return parseFloat(userInput.value);
+    const input = parseFloat(userInput.value);
+    return isNaN(input) ? 0 : input;
 }
 
 function getSymbolToCurrentCalculation(operator, userInputValue) {
